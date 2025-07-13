@@ -146,6 +146,7 @@ http.route({
         fitness_level,
         dietetary_restrictions,
       } = payload;
+      console.log("Hitted gemini");
 
       console.log("Payload from Vapi:", payload);
 
@@ -262,6 +263,8 @@ http.route({
         isActive: true,
         name: `${fitness_goal} Plan - ${new Date().toLocaleDateString()}`,
       });
+
+      
 
       return new Response(
         JSON.stringify({
